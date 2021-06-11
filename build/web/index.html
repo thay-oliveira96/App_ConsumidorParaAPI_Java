@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cadastro de Funcionarios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background: black;
+            }
+            .cadastro{
+                background: #008000;
+                width: 200px;
+                height: 200px;
+                border-radius: 20px;
+            }
+            .lista{
+                background: yellow;
+                width: 200px;
+                height: 200px;
+                border-radius: 20px;
+                font-size:30px;
+            }
+            .lista:hover{
+                color: white;
+            }
+            .flex-box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .content-box {
+                text-align: center;
+                width: 50%;
+                height: 50%;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                width: 300px;
+                height: 300px;
+                font-size: 20px;
+            }
+            a:hover{
+                color: white;
+                
+            }
+            .principal{
+                
+                text-align: center;
+                background: blue;
+                padding: 20px;
+            }
+            .espaco{
+                padding: 45px;
+            }
+            .rodape{
+                background: black;
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            
+        <div class="principal">
+            <h1>Cadastro Recursos Humanos</h1>
+        </div>
+            <div class="espaco"></div>
+        <div class="flex-box container-box">
+            <div class="content-box">
+        <button class="cadastro">
+           <a href="/ConsumidoraCadastroFuncionarios/ManterFuncionarios.jsp">Cadastrar Funcionarios</a>
+        </button>
+        <form action='ManterCadastros' method='post'>
+            <div >
+                <button class="lista" name='btnOperacao' value="ConsultarTodos"> Listar </button>
+            </div>
+       <!-- <button class="lista">
+            <a href="/ConsumidoraCadastroFuncionarios/ListarFuncionario.jsp">Lista de Funcionarios</a>
+        </button>-->
+            </div>
+        </div>
+            <div class="espaco"></div>
+            <div class="rodape">
+                <p>Alunos:</p>
+                <p>Thaynan Rodrigues RGM: 11191102746</p>
+                <p>Vinicius Gonzales RGM: 11191101856</p>
+                <p>Curso:</p>
+                <p>Sistema da Informação</p>
+                <p>Turma: 5ºSIB</p>
+            </div>
+        </div>
+    </body>
+</html>
